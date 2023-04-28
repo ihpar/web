@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div p {
+      font-size: 20pt;
+    }
+
+    .sinif1.sinif2 {
+      border: 2px solid black;
+      background-color: aqua;
+    }
+
+    .sinif1 .parag1 {
+      color: red;
+    }
+
+    p.parag1 {
+      font-size: 30pt;
+      font-weight: bold;
+    }
+
+    a:hover span {
+      font-size: 20pt;
+    }
+
+    .anne {
+      background-color: burlywood;
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+    }
+
+    .anne div {
+      border: 4px solid orangered;
+    }
+
+    .c1 {
+      flex-grow: 1;
+    }
+
+    .c2 {
+      flex-grow: 2;
+    }
+
+    .c3 {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="anne">
+    <div class="c1">Ç1</div>
+    <div class="c2">Ç2</div>
+    <div class="c3">Ç3</div>
+  </div>
+
+
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">
+    <p>Paragraf yazısı</p>
+    <span>Span yazısı</span>
+  </a>
+
+  <div class="sinif1">
+    <p>P1</p>
+    <p class="parag1">P2</p>
+    <p>P3</p>
+  </div>
+
+  <div class="sinif1 sinif2">
+    <p>P4</p>
+  </div>
+
+  <p class="parag1">P5</p>
+
+</body>
+
+</html>
