@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div p {
+      color: rgb(10, 93, 93);
+    }
+
+    .sinif1 {
+      background-color: rgb(188, 128, 128);
+    }
+
+    .sinif1.sinif2 {
+      border: 4px solid black;
+    }
+
+    .sinif1 .parag1 {
+      font-size: 24pt;
+    }
+
+    p.parag1 {
+      font-weight: bold;
+      font-size: 34pt;
+    }
+
+    a {
+      display: block;
+    }
+
+    a:hover span {
+      color: orangered;
+      font-size: 24pt;
+    }
+
+    .tepe-div {
+      width: 100%;
+      height: 100px;
+      background-color: antiquewhite;
+      display: flex;
+    }
+
+    .tepe-div div {
+      height: 50%;
+      border: 1px solid black;
+    }
+
+    .cocuk2 {
+      flex-grow: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tepe-div">
+    <div class="cocuk1">Ç1</div>
+    <div class="cocuk2">Ç2</div>
+    <div class="cocuk3">Ç3</div>
+  </div>
+
+  <div class="sinif1">
+    <p class="parag1">P1</p>
+    <p class="parag2">P2</p>
+  </div>
+
+  <div class="sinif2 sinif1">
+    <p class="parag1">P3</p>
+  </div>
+
+  <p>P4</p>
+  <p>P5</p>
+
+  <a href="http://google.com">
+    <p>parag text</p>
+    <span>span text</span>
+  </a>
+  <a href="http://google.com">Google ana sayfası 2</a>
+
+</body>
+
+</html>
