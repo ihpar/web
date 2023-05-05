@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benim sitem</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .lato-fontu {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .header-div {}
+
+    .header-div,
+    .main-div,
+    .footer-div {
+      padding: 20px 50px;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .nav-ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      align-items: center;
+    }
+
+    .nav-ul .bosluk {
+      flex-grow: 1;
+    }
+
+    .nav-ul a {
+      text-decoration: none;
+      color: #333333;
+      font-size: 14pt;
+      font-family: 'Lato', sans-serif;
+      transition: all 0.25s;
+    }
+
+    .nav-ul a:hover {
+      color: #b21759;
+    }
+
+    .soldan-bosluklu {
+      margin-left: 16px;
+    }
+
+    .dark-button {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14pt;
+      font-family: 'Lato', sans-serif;
+      transition: all 0.25s;
+    }
+
+    .dark-button:hover {
+      background-color: #606060;
+    }
+
+    .main-div {
+      flex-grow: 1;
+    }
+
+    .footer-div {
+      background-image: linear-gradient(to left top, #66095e, #b21759, #e75241, #fc9919, #ebe212);
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header-div">
+    <ul class="nav-ul">
+      <li>
+        <img class="logo" src="resimler/logo.png">
+      </li>
+      <li class="soldan-bosluklu">
+        <a href="index.html">Ana Sayfa</a>
+      </li>
+      <li class="soldan-bosluklu">
+        <a href="index.html">Gezilerim</a>
+      </li>
+      <li class="soldan-bosluklu">
+        <a href="index.html">Hakkımda</a>
+      </li>
+      <li class="bosluk"></li>
+      <li>
+        <input class="dark-button" type="button" value="E-Bültene Katıl!">
+      </li>
+    </ul>
+  </div>
+
+  <div class="main-div">
+    Orta bölüm (main)
+  </div>
+
+  <div class="footer-div">
+    Alt bölüm (footer)
+  </div>
+
+</body>
+
+</html>
