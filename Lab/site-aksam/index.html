@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gezi Blogum</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header-div {}
+
+    .main-div {
+      flex-grow: 1;
+    }
+
+    .footer-div {
+      background-image: linear-gradient(to left top, #660b87, #b50071, #e42c51, #f5702d, #ebae12);
+      min-height: 250px;
+    }
+
+    .header-div,
+    .main-div,
+    .footer-div {
+      padding: 20px 40px;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .nav-ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .bosluk {
+      flex-grow: 1;
+    }
+
+    .nav-ul a {
+      text-decoration: none;
+      color: #333333;
+      margin-left: 20px;
+      transition: all 400ms;
+    }
+
+    .nav-ul a:hover {
+      color: #b50071;
+    }
+
+    .lato-fontu {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .dark-button {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .dark-button:hover {
+      background-color: #666666;
+      transition: all 400ms;
+    }
+
+    .dark-button,
+    .nav-ul a {
+      font-size: 14pt;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="header-div">
+    <ul class="nav-ul">
+      <li>
+        <img class="logo" src="resimler/logom.png">
+      </li>
+      <li>
+        <a href="index.html">Ana Sayfa</a>
+      </li>
+      <li>
+        <a href="index.html">Hakkımda</a>
+      </li>
+      <li>
+        <a href="index.html">Gezilerim</a>
+      </li>
+      <li class="bosluk"></li>
+      <li>
+        <input class="dark-button" type="button" value="Bültene Kaydol!">
+      </li>
+    </ul>
+  </div>
+
+  <div class="main-div">Main</div>
+
+  <div class="footer-div">Footer</div>
+
+</body>
+
+</html>
