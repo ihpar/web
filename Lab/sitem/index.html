@@ -91,6 +91,115 @@
       background-image: linear-gradient(to left top, #66095e, #b21759, #e75241, #fc9919, #ebe212);
       padding-top: 50px;
       padding-bottom: 50px;
+      color: white;
+    }
+
+    .footer-top {
+      text-align: center;
+    }
+
+    .yuvarlatilmis-btn {
+      padding: 8px 16px;
+      border: 1px solid white;
+      color: white;
+      border-radius: 15px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+
+    .yuvarlatilmis-btn:hover {
+      color: rgb(209, 234, 207);
+      border-color: rgb(209, 234, 207);
+    }
+
+    .footer-mid {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      justify-content: space-evenly;
+    }
+
+    .footer-mid ul {
+      list-style-type: none;
+    }
+
+    .footer-mid ul a {
+      text-decoration: none;
+      color: white;
+      transition: all 0.25s;
+      margin: 6px 0;
+      display: block;
+    }
+
+    .footer-mid ul a:hover {
+      color: rgb(209, 234, 207);
+    }
+
+    .asagi-logo {
+      height: 30px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .main-top {
+      text-align: center;
+    }
+
+    .main-top span {
+      display: block;
+    }
+
+    .main-top h1 {
+      font-size: 12pt;
+      margin-bottom: 12px;
+    }
+
+    .buyuk-yazi {
+      font-size: 24pt;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    .main-mid {
+      height: 400px;
+      background-image: url("resimler/gun-batimi.png");
+      margin-top: 50px;
+      margin-bottom: 20px;
+      background-position: center;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .alan-kaplayici {
+      flex-grow: 1;
+    }
+
+    .main-mid-yazilar span {
+      display: block;
+      margin: 6px 20px;
+    }
+
+    .satir {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .sutun {
+      height: 40px;
+      width: 30%;
+      background-color: #e75241;
+      border: 1px solid #606060;
     }
   </style>
 </head>
@@ -119,11 +228,98 @@
   </div>
 
   <div class="main-div">
-    Orta bölüm (main)
+
+    <div class="main-top">
+      <h1 class="lato-fontu">Gezi Blogum</h1>
+      <span class="lato-fontu buyuk-yazi">Gezilerimden Oluşturduğum Seçme Yazılar</span>
+      <span>Turistik, tarihi, otantik mekanlar</span>
+    </div>
+
+    <div class="main-mid">
+      <div class="alan-kaplayici"></div>
+      <div class="main-mid-yazilar">
+        <span>İsmail . 2023</span>
+        <span style="font-size: 18pt;">Uzman Gezegen</span>
+        <span>Nereleri geziyorum görmek ister misiniz?</span>
+      </div>
+      <div style="padding: 20px;">
+        <input class="yuvarlatilmis-btn" type="button" value="Gezi">
+        <input class="yuvarlatilmis-btn" type="button" value="Gözlem">
+        <input class="yuvarlatilmis-btn" type="button" value="Yazılar">
+      </div>
+    </div>
+
+    <div class="main-bottom">
+      <div class="satir">
+        <div class="sutun"></div>
+        <div class="sutun"></div>
+        <div class="sutun"></div>
+      </div>
+      <div class="satir">
+        <div class="sutun"></div>
+        <div class="sutun"></div>
+        <div class="sutun"></div>
+      </div>
+    </div>
+
   </div>
 
   <div class="footer-div">
-    Alt bölüm (footer)
+
+    <div class="footer-top">
+      <h2>Bu benim blogumun alt yazısı</h2>
+      <br>
+      <span>Bu da alt yazının altındaki yazı</span>
+      <br><br>
+      <input class="yuvarlatilmis-btn" type="button" value="Alttaki butonun yazısı">
+    </div>
+
+    <div class="footer-mid">
+      <ul>
+        <li><a href="#">Link 1.1</a></li>
+        <li><a href="#">Link 1.2</a></li>
+        <li><a href="#">Link 1.3</a></li>
+        <li><a href="#">Link 1.4</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link 2.1</a></li>
+        <li><a href="#">Link 2.2</a></li>
+        <li><a href="#">Link 2.3</a></li>
+        <li><a href="#">Link 2.4</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link 3.1</a></li>
+        <li><a href="#">Link 3.2</a></li>
+        <li><a href="#">Link 3.3</a></li>
+        <li><a href="#">Link 3.4</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link 4.1</a></li>
+        <li><a href="#">Link 4.2</a></li>
+        <li><a href="#">Link 4.3</a></li>
+        <li><a href="#">Link 4.4</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link 5.1</a></li>
+        <li><a href="#">Link 5.2</a></li>
+        <li><a href="#">Link 5.3</a></li>
+        <li><a href="#">Link 5.4</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link 6.1</a></li>
+        <li><a href="#">Link 6.2</a></li>
+        <li><a href="#">Link 6.3</a></li>
+        <li><a href="#">Link 6.4</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <img src="resimler/logo.png" class="asagi-logo">
+      <span>
+        ©2023 Tüm hakları saklıdır.
+      </span>
+    </div>
+
   </div>
 
 </body>
