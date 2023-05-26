@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.lato-fontu {
+  font-family: 'Lato', sans-serif;
+}
+
+.header-div,
+.main-div,
+.footer-div {
+  padding: 20px 50px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-ul .bosluk {
+  flex-grow: 1;
+}
+
+.nav-ul a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 14pt;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.25s;
+}
+
+.nav-ul a:hover {
+  color: #b21759;
+}
+
+.soldan-bosluklu {
+  margin-left: 16px;
+}
+
+.dark-button {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14pt;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.25s;
+}
+
+.dark-button:hover {
+  background-color: #606060;
+}
+
+.main-div {
+  flex-grow: 1;
+}
+
+.footer-div {
+  background-image: linear-gradient(to left top, #66095e, #b21759, #e75241, #fc9919, #ebe212);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.footer-top {
+  text-align: center;
+}
+
+.yuvarlatilmis-btn {
+  padding: 8px 16px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.yuvarlatilmis-btn:hover {
+  color: rgb(209, 234, 207);
+  border-color: rgb(209, 234, 207);
+}
+
+.footer-mid {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-evenly;
+}
+
+.footer-mid ul {
+  list-style-type: none;
+}
+
+.footer-mid ul a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.25s;
+  margin: 6px 0;
+  display: block;
+}
+
+.footer-mid ul a:hover {
+  color: rgb(209, 234, 207);
+}
+
+.asagi-logo {
+  height: 30px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-top {
+  text-align: center;
+}
+
+.main-top span {
+  display: block;
+}
+
+.main-top h1 {
+  font-size: 12pt;
+  margin-bottom: 12px;
+}
+
+.buyuk-yazi {
+  font-size: 24pt;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.main-mid {
+  height: 400px;
+  background-image: url("../resimler/gun-batimi.png");
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.alan-kaplayici {
+  flex-grow: 1;
+}
+
+.main-mid-yazilar span {
+  display: block;
+  margin: 6px 20px;
+}
+
+.satir {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.sutun {
+  width: 30%;
+  margin-top: 40px;
+}
+
+.makale-resmi {
+  background-image: url("../resimler/gun-batimi.png");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  margin-bottom: 16px;
+}
+
+.makale-ust-yazi {
+  margin-bottom: 16px;
+  display: block;
+}
+
+.makale-yazilari h4 {
+  margin: 0 0 16px 0;
+  font-size: 18pt;
+}
+
+.makale-yazilari p {
+  text-align: justify;
+  margin-bottom: 16px;
+}
+
+.makale-butonlar .yuvarlatilmis-btn {
+  color: rgb(50, 50, 50);
+  border-color: rgb(50, 50, 50);
+}
+
+.nav-ul a.aktif-sayfa {
+  color: #fc19a5;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+
+  .sutun {
+    width: 48%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .sutun {
+    width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #e-bulten-btn {
+    display: none;
+  }
+
+}

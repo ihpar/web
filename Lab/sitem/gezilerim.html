@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benim sitem</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="stiller/stil.css">
+  <link rel="stylesheet" href="stiller/gezilerim.css">
+  <style>
+    .main-mid {
+      background-image: url("resimler/peru.jpg");
+      height: 600px;
+    }
+
+    .gezi-paragraflari-div p {
+      text-align: justify;
+      font-size: 14pt;
+      margin-bottom: 20px;
+    }
+
+    .resim-tarifi {
+      padding: 20px;
+      text-align: right;
+      font-size: 18pt;
+    }
+
+    .yazi-kapsayici {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .yazi-sutunu {
+      width: 45%;
+    }
+
+    @media screen and (max-width: 900px) {
+      .yazi-sutunu {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header-div">
+    <ul class="nav-ul">
+      <li>
+        <img class="logo" src="resimler/logo.png">
+      </li>
+      <li class="soldan-bosluklu">
+        <a href="index.html">Ana Sayfa</a>
+      </li>
+      <li class="soldan-bosluklu">
+        <a href="gezilerim.html" class="aktif-sayfa">Gezilerim</a>
+      </li>
+      <li class="soldan-bosluklu">
+        <a href="#">Hakkımda</a>
+      </li>
+      <li class="bosluk"></li>
+      <li>
+        <input id="e-bulten-btn" class="dark-button" type="button" value="E-Bültene Katıl!">
+      </li>
+    </ul>
+  </div>
+
+  <div class="main-div">
+
+    <div class="main-top">
+      <h1 class="lato-fontu">Gezi Blogum</h1>
+      <span class="lato-fontu buyuk-yazi">Peru Gezimden Kareler</span>
+      <span>Gezdim, gördüm</span>
+    </div>
+
+    <div class="main-mid">
+      <div class="alan-kaplayici"></div>
+      <div class="resim-tarifi">Peru Botanik Parkı . Kasım 2022</div>
+    </div>
+    <div class="gezi-paragraflari-div">
+      <div class="yazi-kapsayici">
+        <div class="yazi-sutunu">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima repellat minus assumenda enim animi suscipit maiores quos dignissimos ipsa, exercitationem pariatur dolor perferendis illum dolores odit asperiores aut soluta nobis.</p>
+          <p>Odit accusamus vel dolore explicabo. Quam natus repellat maxime. Sed illo minima quos deserunt. Amet sunt, accusamus voluptates dolores porro vitae nemo repellat, tempora possimus incidunt nesciunt. Dolore, aspernatur temporibus!</p>
+        </div>
+
+        <div class="yazi-sutunu">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima repellat minus assumenda enim animi suscipit maiores quos dignissimos ipsa, exercitationem pariatur dolor perferendis illum dolores odit asperiores aut soluta nobis.</p>
+          <p>Odit accusamus vel dolore explicabo. Quam natus repellat maxime. Sed illo minima quos deserunt. Amet sunt, accusamus voluptates dolores porro vitae nemo repellat, tempora possimus incidunt nesciunt. Dolore, aspernatur temporibus!</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-div">
+
+    <div class="footer-top">
+      <h2>Bu benim blogumun alt yazısı</h2>
+      <br>
+      <span>Bu da alt yazının altındaki yazı</span>
+      <br><br>
+      <input class="yuvarlatilmis-btn" type="button" value="Alttaki butonun yazısı">
+    </div>
+
+    <div class="footer-mid">
+      <ul>
+        <li><a href="#">Link 1.1</a></li>
+        <li><a href="#">Link 1.2</a></li>
+        <li><a href="#">Link 1.3</a></li>
+        <li><a href="#">Link 1.4</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link 2.1</a></li>
+        <li><a href="#">Link 2.2</a></li>
+        <li><a href="#">Link 2.3</a></li>
+        <li><a href="#">Link 2.4</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link 3.1</a></li>
+        <li><a href="#">Link 3.2</a></li>
+        <li><a href="#">Link 3.3</a></li>
+        <li><a href="#">Link 3.4</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link 4.1</a></li>
+        <li><a href="#">Link 4.2</a></li>
+        <li><a href="#">Link 4.3</a></li>
+        <li><a href="#">Link 4.4</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link 5.1</a></li>
+        <li><a href="#">Link 5.2</a></li>
+        <li><a href="#">Link 5.3</a></li>
+        <li><a href="#">Link 5.4</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Link 6.1</a></li>
+        <li><a href="#">Link 6.2</a></li>
+        <li><a href="#">Link 6.3</a></li>
+        <li><a href="#">Link 6.4</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <img src="resimler/logo.png" class="asagi-logo">
+      <span>
+        ©2023 Tüm hakları saklıdır.
+      </span>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
