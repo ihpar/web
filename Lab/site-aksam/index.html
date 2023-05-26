@@ -11,171 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    .main-div {
-      flex-grow: 1;
-    }
-
-    .footer-div {
-      background-image: linear-gradient(to left top, #660b87, #b50071, #e42c51, #f5702d, #ebae12);
-      min-height: 250px;
-      color: white;
-    }
-
-    .header-div,
-    .main-div,
-    .footer-div {
-      padding: 20px 40px;
-    }
-
-    .logo {
-      height: 50px;
-    }
-
-    .nav-ul {
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .bosluk {
-      flex-grow: 1;
-    }
-
-    .nav-ul a {
-      text-decoration: none;
-      color: #333333;
-      margin-left: 20px;
-      transition: all 400ms;
-    }
-
-    .nav-ul a:hover {
-      color: #b50071;
-    }
-
-    .lato-fontu {
-      font-family: 'Lato', sans-serif;
-    }
-
-    .dark-button {
-      background-color: #333333;
-      color: #ffffff;
-      padding: 10px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .dark-button:hover {
-      background-color: #666666;
-      transition: all 400ms;
-    }
-
-    .dark-button,
-    .nav-ul a {
-      font-size: 14pt;
-    }
-
-    .footer-top {
-      text-align: center;
-      padding-top: 30px;
-    }
-
-    .yuvarlak-btn {
-      padding: 6px 12px;
-      border: 1px solid white;
-      border-radius: 14px;
-      color: white;
-      background-color: transparent;
-      font-size: 10pt;
-      cursor: pointer;
-      transition: all 0.25s;
-    }
-
-    .yuvarlak-btn:hover {
-      color: rgb(211, 230, 205);
-    }
-
-    .footer-mid {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
-    .footer-mid ul {
-      list-style-type: none;
-    }
-
-    .footer-mid ul a {
-      text-decoration: none;
-      color: white;
-      margin: 6px 0;
-      display: block;
-    }
-
-    .footer-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .main-top {
-      text-align: center;
-    }
-
-    .main-top h1 {
-      font-size: 12pt;
-    }
-
-    .main-top span {
-      display: block;
-    }
-
-    .main-mid {
-      height: 400px;
-      background-image: url("resimler/gezgin.png");
-      background-position: center;
-      margin: 30px 0;
-      background-size: cover;
-      color: #ffffff;
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .main-mid span {
-      display: block;
-      margin-bottom: 18px;
-    }
-
-    .satir {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 20px;
-      justify-content: space-between;
-    }
-
-    .sutun {
-      height: 40px;
-      width: 30%;
-      background-color: #b50071;
-    }
-  </style>
+  <link rel="stylesheet" href="stiller/site.css">
 
 </head>
 
@@ -187,13 +23,13 @@
         <img class="logo" src="resimler/logom.png">
       </li>
       <li>
-        <a href="index.html">Ana Sayfa</a>
+        <a href="index.html" class="aktif-sayfa">Ana Sayfa</a>
       </li>
       <li>
-        <a href="index.html">Hakkımda</a>
+        <a href="#">Hakkımda</a>
       </li>
       <li>
-        <a href="index.html">Gezilerim</a>
+        <a href="gezilerim.html">Gezilerim</a>
       </li>
       <li class="bosluk"></li>
       <li>
@@ -227,16 +63,74 @@
 
     <div class="main-bottom">
       <div class="satir">
-        <div class="sutun"></div>
-        <div class="sutun"></div>
-        <div class="sutun"></div>
+        <div class="sutun">
+          <div class="kart-resmi"></div>
+          <div class="kart-yazilari">
+            <span>İsmail Parlak . 2023</span>
+            <h4>Kart Başlığı</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus, corrupti magni cupiditate dolore soluta.</p>
+            <input class="yuvarlak-btn" type="button" value="Birinci düğme">
+            <input class="yuvarlak-btn" type="button" value="İkinci düğme">
+          </div>
+        </div>
+
+        <div class="sutun">
+          <div class="kart-resmi"></div>
+          <div class="kart-yazilari">
+            <span>İsmail Parlak . 2023</span>
+            <h4>Kart Başlığı</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus, corrupti magni cupiditate dolore soluta.</p>
+            <input class="yuvarlak-btn" type="button" value="Birinci düğme">
+            <input class="yuvarlak-btn" type="button" value="İkinci düğme">
+          </div>
+        </div>
+
+        <div class="sutun">
+          <div class="kart-resmi"></div>
+          <div class="kart-yazilari">
+            <span>İsmail Parlak . 2023</span>
+            <h4>Kart Başlığı</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus, corrupti magni cupiditate dolore soluta.</p>
+            <input class="yuvarlak-btn" type="button" value="Birinci düğme">
+            <input class="yuvarlak-btn" type="button" value="İkinci düğme">
+          </div>
+        </div>
+
+        <div class="sutun">
+          <div class="kart-resmi"></div>
+          <div class="kart-yazilari">
+            <span>İsmail Parlak . 2023</span>
+            <h4>Kart Başlığı</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus, corrupti magni cupiditate dolore soluta.</p>
+            <input class="yuvarlak-btn" type="button" value="Birinci düğme">
+            <input class="yuvarlak-btn" type="button" value="İkinci düğme">
+          </div>
+        </div>
+
+        <div class="sutun">
+          <div class="kart-resmi"></div>
+          <div class="kart-yazilari">
+            <span>İsmail Parlak . 2023</span>
+            <h4>Kart Başlığı</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus, corrupti magni cupiditate dolore soluta.</p>
+            <input class="yuvarlak-btn" type="button" value="Birinci düğme">
+            <input class="yuvarlak-btn" type="button" value="İkinci düğme">
+          </div>
+        </div>
+
+        <div class="sutun">
+          <div class="kart-resmi"></div>
+          <div class="kart-yazilari">
+            <span>İsmail Parlak . 2023</span>
+            <h4>Kart Başlığı</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus, corrupti magni cupiditate dolore soluta.</p>
+            <input class="yuvarlak-btn" type="button" value="Birinci düğme">
+            <input class="yuvarlak-btn" type="button" value="İkinci düğme">
+          </div>
+        </div>
+
       </div>
 
-      <div class="satir">
-        <div class="sutun"></div>
-        <div class="sutun"></div>
-        <div class="sutun"></div>
-      </div>
     </div>
 
   </div>

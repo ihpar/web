@@ -1,0 +1,25 @@
+.main-mid {
+  background-image: url("../resimler/peru.jpg");
+}
+
+.main-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-bottom div {
+  width: 48%;
+}
+
+.main-bottom p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+  .main-bottom div {
+    width: 100%;
+  }
+}
